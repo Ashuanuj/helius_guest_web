@@ -1,0 +1,100 @@
+// Demo Pages
+.ButtonPage {
+  .btn {
+    margin: 4px;
+  }
+
+  .btn-group {
+    .btn {
+      margin: 0;
+    }
+  }
+}
+
+.TablePage {
+  .card-body {
+    overflow: hidden;
+  }
+}
+
+// CSS FOR LANDSCAPE MODE MEDIA QUERY
+@media all and (max-width: 980px) and (min-aspect-ratio: 13/9) and (orientation: landscape) {
+  .cr-content{
+    background: #142a3b;
+  }
+  //Sidebar Footer
+  .sidebar-footer{
+    position: unset;
+    margin-bottom: 30px;
+  }
+  .ServicePageMain{
+    // Continue Button in SubCategory page
+    .addItem-div{
+      padding: 10px 40px 20px 20px;
+      background: #142A3B;
+      border-top: 1px solid #132431aa;
+      font-family: 'Open_Sans';
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      width: 100%;
+      span .ContinueBtn{padding:0px;}
+    }
+ }
+   //Wake up Request Button
+  //  .wakeup-div .note-text textarea:focus{
+       
+  //  }
+   .WakeupRequestBtn-div{
+    width: 100%;
+    flex-direction: row;
+       position: fixed;
+       bottom: 0;
+       left:0;
+       z-index: 1;
+      .btn{
+       font-size: 13px;
+       font-family: 'Neo_Sans_Pro';
+       text-transform: uppercase;
+       font-weight: 700;
+       width: 100%;
+      }
+   .btnCancel{
+       width: 40%;
+       margin: 0 !important;
+       border-radius: 0px !important;
+       color: #000;
+       font-size: 13px;
+       font-family: 'Neo_Sans_Pro';
+       text-transform: uppercase;
+       font-weight: 700;
+   }
+   .btnReqt{
+       width: 60%;
+       border-radius: 0px !important;
+       background: #5FBAFE linear-gradient(90deg, #5FBAFE, #567CF8);
+       font-size: 13px;
+       font-family: 'Neo_Sans_Pro';
+       text-transform: uppercase;
+       font-weight: 700;
+   }
+  }
+  //Confirm Button
+  .confirmBtn-div{
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border: 0px;
+    .confirmBtn{
+        border-radius: 0 !important;
+        bottom: 0;
+    }  
+  }
+  .wakeup-div .note-text {
+    margin-bottom: 4rem !important;
+  }
+
+}

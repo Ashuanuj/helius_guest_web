@@ -1,0 +1,44 @@
+
+body{
+    background-color: #142A3B !important;
+}
+
+.ServicePageMain {
+      /*card animation from slide left*/
+  
+    .card{
+        color: white;
+        background-color: #1F3C53;
+        border-radius: 12px;
+        padding: 20px 10px;
+        cursor: pointer;
+    }
+    // .card:hover{
+    //     border-color: $blue;
+    // }
+    }
+.card-serv-main-dash{
+    padding: 20px 10px;
+    .card-img-left {
+        background: linear-gradient(180deg, #5FBAFE, #567CF8);
+        margin: 0px 10px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .card-body{
+        
+        .card-title{
+            font-family: 'Neo_Sans_Pro';
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
+        }
+        .card-text{
+            font-family: 'Open_Sans';
+            font-size: 13px;
+            color: #A2B0BA;
+
+        }
+    }
+}

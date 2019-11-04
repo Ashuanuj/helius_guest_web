@@ -1,0 +1,287 @@
+.main-requestform{
+  overflow-x: hidden;
+  
+  .HomeMain{
+    height: 100vh;
+  }
+}
+.card{
+  background-color: none;
+}
+
+    input[type=text]::-webkit-input-placeholder
+    {
+    color: #A2B0BA !important;
+    }
+    input[type=text]::-moz-input-placeholder
+    {
+    color: #A2B0BA !important;
+    }
+
+ .btn-secondary.disabled, .btn-secondary:disabled {
+  background: #5FBAFE;
+  color: #fff;
+ }
+ .button{
+  height:50px;
+  width: 318px;
+}
+.btn-secondary:focus{
+    outline:none;
+    box-shadow: none;
+}
+//placeholder color
+
+ input .form-control{
+  margin: 0px !important; 
+ }
+
+ .form-group input[value=""]:focus::before {
+  color: transparent;
+  content: "";
+  }
+ 
+.form-control{
+  background-color:#1F3C53 !important;
+  border: 1px solid #1F3C53 !important;
+  color:#fff;
+  height: 51px;
+  padding: 15px 10px;
+  font-size: 13px;
+  font-family: 'Neo_Sans';
+  border-radius:8px;
+}
+.form-control:hover{
+  border: 1px solid #1F3C53;
+}
+.form-group .form-control:focus{
+  outline:none;
+  box-shadow: none;
+  border-color: none !important;
+  color: #fff !important;
+}
+
+//Error text
+.text-danger{
+  color: #ff0000 !important;
+  padding-top: 8px;
+  font-size: 12px;
+  font-family:'Open_Sans';
+}
+
+//Datepicker width
+.react-datepicker-wrapper{
+  width:100%;
+  color: #A2B0BA;
+}
+
+//Date in bootstrap
+.form-group input[value=""]:before {
+  content: attr(placeholder);
+  margin-right: 5px;
+  color: #A2B0BA;
+}
+
+.form-group input[value=""] {
+  color: transparent;
+}
+.form-group input[value=""]:focus::before {
+  color: transparent;
+  content: "";
+}
+
+.form-group input[type=date]:focus {
+  color: white !important;
+}
+
+
+//Date input end
+
+// input[type="date"]::before {
+//   content: attr(placeholder) !important;
+//   // color: #A2B0BA;
+//   // margin-right: 5px;
+//   color: #a2b0baa8;
+// }
+// .form-group input[type=date]:focus {
+//   color: white !important;
+// }
+
+// .form-group input[value=""] {
+//   // color: #6c757c !important  ;
+//   color: #e9ecef00;
+// }
+// input[type="date"]:focus:before,
+// input[type="date"]:valid:before {
+//   content: "";
+// }
+// input[type="date"]:focus:before,
+// input[type="date"]:not([value=""]):before
+// {
+//   display: none;
+// }
+input[type="date"]:hover:before
+{ content: ""; }
+
+//Date input end
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+.Requestbtn{
+  font-family: 'Neo_Sans' ;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px 8px;
+    transition: .3s;
+    background: #5FBAFE linear-gradient(90deg, #5FBAFE, #567CF8) repeat-x;
+  }
+
+  .btn-secondary:hover{
+    background: #5FBAFE linear-gradient(90deg, #5FBAFE, #567CF8) repeat-x;
+    box-shadow: 0px 4px 4px 0px #5780F880;
+  }
+  
+  .btn-secondary:not(:disabled):not(.disabled):active{
+    background: #5FBAFE linear-gradient(90deg, #5FBAFE, #567CF8) repeat-x;
+    border-color: 1px solid #5FBAFE;
+  }
+  
+  .btn-secondary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none;
+  }
+  
+.form-main{
+    padding: 32px;
+    background: #142A3B;
+    // min-height: 40vh;
+    a{
+      text-decoration: none;
+    }
+    //Date input box
+   }
+
+  //footer
+  .foo-div{
+    color: #fff;
+    padding: 10px;
+    background: #142A3B;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+ 
+.cardbody-main{
+    // background: none;
+    // border:0px !important;
+    padding: 0px;
+    position: relative;
+}
+  .cardImg{
+    border-radius: 0px;
+    height: 285px;
+  }
+  .cardImgtext{
+    color: white;
+    position: absolute;
+    // top: 168px;
+    top:175px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    .para{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Neo_Sans';
+    }
+    .subpara{
+      text-align: center;
+      font-size: 13px;
+      font-family: 'Open_Sans';
+      padding: 0px 30px;
+    }
+  }
+
+  @media screen and (max-width:765px) {
+    body{
+       background-color: #142A3B !important;
+    }
+  }
+
+  @media screen and (min-width:360px) and (max-width:640px){
+
+    .card{
+      background-color: none;
+    }
+    .cardbody-main{
+      position: relative;
+      border: 0px !important;
+      background: none;
+    }
+    .cardImgtext{
+        // margin-top:9em;
+        color: white; 
+        position: absolute;
+      
+        .para{
+            text-align: center;
+            font-family: 'Neo_Sans';
+            font-size: 20px;
+            font-weight: 600;
+           
+        }
+        .subpara{
+            text-align: center;
+            font-size: 13px;
+            font-family: 'Open_Sans';
+            padding: 0px 50px;
+        }
+    }
+  }
+
+
+
+    // @media screen and (max-width:998px){
+  @media screen and (min-width:767px) and (max-width:1023px){
+      .cardbody-main{
+        position: relative;
+      }
+    .cardImgtext{
+        position: absolute;
+        color: white;
+        .para{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Neo_Sans';
+        }
+        .subpara{
+            text-align: center;
+            font-size: 13px;
+            font-family: 'Open_Sans';
+        }
+    }
+  }
+
+  // card position center for bigger screen
+@media screen and (min-width:768px){
+  .HomeMain{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:320px){
+  .cardbody-main{
+    position: relative;
+    background: none;
+    border: 0px !important;
+  }
+}

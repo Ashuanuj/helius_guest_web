@@ -1,0 +1,33 @@
+@import "variables";
+
+// libraries
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~react-infinite-calendar/styles";
+
+// base
+@import "base";
+@import "overrides";
+@import "extends";
+@import "animations";
+@import "utils/utils";
+
+// components
+@import "components/header";
+@import "components/footer";
+@import "components/sidebar";
+@import "components/content";
+@import "components/page";
+@import "components/widget";
+@import "components/search-input";
+@import "components/requestform";
+@import "components/tab";
+
+// themes
+@import "themes/colors";
+
+// demos (only for demo pages)
+@import "demos/demos";
+
+//Pages
+@import "pages/dashboard";
+@import "pages/services";

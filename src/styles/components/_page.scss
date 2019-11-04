@@ -1,0 +1,74 @@
+// page
+.cr-page {
+  min-height: 100vh;
+  // position: relative;
+  background: #142A3B;
+  padding-top: 4rem;
+  // min-height: 90vh;
+  // height: auto;
+  // padding-bottom: 100px;
+
+   /*card animation from slide left*/
+   animation-duration: 300ms;
+   animation-name: slidein;
+   @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+  .breadcrumb{
+    color: #fff;
+    background-color: #142A3B;
+  }
+  &__header {
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    display: flex;
+    align-items: flex-end;
+    align-self: center;
+  }
+
+  &__title {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+    }
+    padding-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__breadcrumb {
+    @include media-breakpoint-down(sm) {
+      align-self: flex-start;
+    }
+    align-self: flex-end;
+    padding: 0;
+    text-transform: capitalize;
+    // background: theme-color('dark');
+  }
+
+  .row {
+    // stylelint-disable-next-line
+    .col,
+    > [class^='col-'] {
+      // margin-bottom: 1rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.cr-page-spinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

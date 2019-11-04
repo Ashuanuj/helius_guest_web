@@ -1,0 +1,42 @@
+@import '../globals';
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: z(panel);
+  display: flex;
+  background: #fff;
+  border-left: 1px solid rgba(#000, 0.1);
+  height: calc(100vh - 68px);
+  font-size: 14px;
+  transition: all 0.2s ease-in;
+
+  &:not(.open) {
+    width: 0;
+    opacity: 0;
+    //transform: translateX(100%);
+    transition: opacity 0.1s ease-in, width 0.2s ease-out;
+  }
+
+  &.open {
+    width: 540px;
+    opacity: 1;
+  }
+}
+.actions {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  top: 25px;
+  right: 15px;
+
+  .separator {
+    width: 1px;
+    height: 40px;
+    margin: 0 14px;
+    background-color: grey;
+  }
+}
