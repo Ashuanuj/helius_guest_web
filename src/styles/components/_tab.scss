@@ -1,0 +1,57 @@
+    .Tabmain {
+        width: 100%;
+        // text-align: center;
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    .divider{
+        border-bottom: 1px solid #efefef26;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .btnTab{
+        margin: 5px;
+        padding: 5px 10px;
+        color: #fff;
+        background: none;
+        border-color: #1F3C53;
+        cursor: pointer;
+        font-weight: 400;
+        .btnTab:active {
+            border-bottom-color: #fff;
+            border-bottom: 2px solid;
+        }
+    }
+   
+    .tabContent {
+        color: #fff;
+        text-align: justify;
+        font-weight: 100;
+        // padding: 15px 0px;
+        padding: 0px;
+    }
+
+// .button {
+//     font-size: 1rem;
+//     font-weight: 100;
+//     border: 0;
+//     margin: 5px;
+//     padding: 5px 10px;
+//     cursor: pointer;
+    
+//   .button:focus {
+//     outline: 0
+//   }
+  
+//   .active {
+//     border-bottom: 2px solid #40b6da;
+//   }
+  
+//   .tabContent {
+//     text-align: justify;
+//     font-weight: 100;
+//     padding: 2% 5%;
+//   }
+// }

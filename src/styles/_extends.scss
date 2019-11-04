@@ -1,0 +1,29 @@
+.card-img-left {
+  border-radius: 0;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-bottom-left-radius: calc(.25rem - 1px);
+}
+
+.card-img-right {
+  border-radius: 0;
+  border-top-right-radius: calc(.25rem - 1px);
+  border-bottom-right-radius: calc(.25rem - 1px);
+}
+
+
+.pz{
+  padding: 0px;
+}
+
+.pd-5{
+  padding: 5px;
+}
+
+.pd-10{
+  padding: 10px;
+}
+.pd-b-10{
+  padding-bottom: 30px;
+  border-radius: 0px;
+}
+

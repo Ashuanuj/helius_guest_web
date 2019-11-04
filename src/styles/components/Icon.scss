@@ -1,0 +1,12 @@
+@import '../globals';
+
+.container {
+  display: inline-block;
+  user-select: none;
+}
+
+@each $name, $color in $colors {
+  .#{$name} {
+    color: $color;
+  }
+}

@@ -1,0 +1,256 @@
+.cr-sidebar {
+  font-family: 'Neo Sans Pro,Medium';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -$cr-sidebar-width;
+  z-index: 5;
+  width: $cr-sidebar-width;
+  font-weight: 200;
+  color: #fff;
+  background-position: center center;
+  background-size: cover;
+  transition: left 0.1s ease-in;
+  background: #142A3B;
+
+  + .cr-content {
+    transition: margin 0.1s ease-in;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+  }
+
+  &::before {
+    background: #000;
+    opacity: 0.33;
+  }
+
+  &::after {
+    z-index: 3;
+    // sublime light
+    background: #1F3C53; /* fallback for old browsers */
+    background: linear-gradient(to bottom, #1F3C53, #1F3C53);
+    opacity: 1;
+  }
+
+  &[data-image]:after {
+    opacity: 0.77;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 4;
+    // height: calc(100vh - 20px);
+    height: 100vh;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background: #142A3B;
+  }
+
+  &__nav-item-collapse {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__nav-item-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
+  }
+
+  &--open {
+    left: 0;
+    transition: left 0.2s ease-in;
+
+    + .cr-content {
+      margin: 0 0 0 $cr-sidebar-width;
+      transition: margin 0.2s ease-in;
+    }
+  }
+
+   .nav {
+      .nav-item {
+      // margin: 5px 10px;
+      // color: theme-color(light);
+      color:#fff;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 700;
+      opacity: 0.86;
+      border-bottom: 1px solid #1F3546;
+    }
+
+    .nav-link {
+      color:#fff;
+      height: 66px;
+      font-weight: 500;
+      border-left: 1px solid #1F3546;
+
+      &:hover {
+       background:#1F3C53;
+       border-color: #10b7d2; 
+      }
+      &:active{
+        // background: #142A3B;
+        background: rgba(theme-color(light), 0.15);
+      }
+    }
+    .sub{
+      padding-left: 40px;
+    }
+
+  }
+}
+// Side bar Image part 
+.sidebar-text{
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Neo_Sans';
+}
+.sidebarImg-main{
+  span{
+    position: absolute;
+    top:140px;
+    left: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Neo_Sans';
+  }
+  .crossbtn{
+    cursor: pointer;
+    position: absolute;
+    top:10px;
+    left: 255px;
+    z-index: 7;
+    color: #fff;
+  }
+}
+
+.sidebarImg{
+  background-position: center center;
+  background-size: cover;
+  width: 300px;
+  height: 190px;
+  // background: linear-gradient(45deg, #10b7d2, #212529);
+
+}
+// Sidebar ListItem
+.MuiPaper-root{
+  background: #142A3B !important;
+  ul a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Neo_Sans';
+    font-weight: 600;
+  }
+  .MuiListItemText-root{
+    text-align: center;
+  .MuiTypography-body1{
+    font-size: 15px;
+    font-family: 'Neo_Sans';
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+  .makeStyles-list-1 ul:hover{
+      border: #107bd2 1px solid;
+    }
+ 
+}
+
+.MuiList-root {
+  height: 66px;
+  border-bottom: 1px solid #1F3546; 
+  .MuiList-padding{
+    background: #1F3C53;
+  }
+
+}
+
+@media screen and (max-width:1440px){
+.sidebarImg-main{ 
+    .crossbtn {
+      display: none;
+  }
+}
+//header width
+// .bgNav {
+//   width: 82%;
+// }
+}
+
+@media screen and (max-width:1330px){
+  .sidebarImg-main{ 
+      .crossbtn {
+        display: none;
+    }
+  }
+  //header width
+  .bgNav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .sidebarImg-main{ 
+      .crossbtn {
+        display: block;
+    }
+  }
+  .bgNav {
+    width: 100%;
+  }
+}
+
+.MuiList-root{
+  background: #1F3C53;
+  color: #1F3C53;
+  transition: none !important;
+}
+
+.MuiListItem-button{
+  transition: none !important;
+}
+.MuiListItem-button:hover{
+  background: none !important;
+}
+
+.MuiPaper-root .makeStyles-list-1 ul:hover{
+  border: 0px !important;
+}
+
+.MuiDrawer-paper{
+ height: 110% !important;
+}

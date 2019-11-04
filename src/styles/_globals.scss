@@ -1,0 +1,149 @@
+$topbar-height: 60px;
+$navigation-width: 250px;
+$header-height: 50px;
+$border-radius: 6px;
+
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  white_medium: #f0eee7,
+  grey: #c8c8c8,
+  grey_dark: #363636,
+  logo: #332f3d,
+  site_logo: #000000,
+  label: #b4b3b9,
+  text_bold: #493c46,
+  text_grey: #868686,
+  text_light: #b0adbd,
+  border: #d9d9d9,
+  hover: #efefef,
+  nav_link: #485078,
+  nav_back: #2c2c2c,
+  nav_open: #252424,
+  top_bar: #5972b7,
+  purple: #8c84cb,
+  blue: #5972b7,
+  available: #72b7da,
+  progress: #ffd674,
+  removal: #cdcdcd,
+  urgent: #ee5878,
+  late: #ee5878,
+  assigned: #94d075,
+  completed: #94d075,
+  error: #ff5f5f,
+  green: #89d661,
+  red: #da5151,
+
+  theme_dark: #1F2F5B,
+  theme_light: #FFF,
+);
+
+$z-layers: (
+  new-button: 1008,
+  new-button-backdrop: 1007,
+  grid-backdrop: 1009,
+  thumb: 1010,
+  panel: 1011,
+  navigation: 1012,
+  topbar: 1013,
+  backdrop: 1016,
+  worksheet-element: 1017,
+  tether: 1018,
+  toast: 1019,
+  modal: 1020,
+);
+
+/// Colors
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+/// Z-index
+@function z($index) {
+  @return map-get($z-layers, $index);
+}
+
+// https://css-tricks.com/snippets/sass/tint-shade-functions/
+
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/// card tile mixin
+@mixin tile() {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  flex: 1;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  .title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .status {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .body {
+    color: #585663;
+    font-size: 15px;
+    line-height: 18px;
+    flex: 1;
+    padding: 10px 0;
+  }
+
+  .footer {
+    color: #999999;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .header {
+    display: flex;
+    .action {
+      display: flex;
+      position: absolute;
+      top: 8px;
+      right: 3px;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .headerText {
+      flex: 1;
+      color: #999;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+}

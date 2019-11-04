@@ -1,0 +1,21 @@
+// colors
+
+.bg-gradient-theme {
+  background: linear-gradient(to bottom, theme-color("primary"), theme-color("blue"));
+}
+.bg-gradient-theme-top {
+  background: linear-gradient(to top, theme-color("primary"), theme-color("secondary"));
+}
+.bg-gradient-theme-left {
+  background: linear-gradient(to left, theme-color("primary"), theme-color("secondary"));
+}
+.bg-gradient-theme-right {
+  background: linear-gradient(to right, theme-color("primary"), theme-color("secondary"));
+}
+
+.bg-gradient-Requestbtn { 
+  background: linear-gradient(to right, defined-colors("light-blue"), defined-colors("little-dark-blue"));
+}
+// .bg-blue{
+//   background:rgba(135, 222, 238, 0.986);
+//  }
